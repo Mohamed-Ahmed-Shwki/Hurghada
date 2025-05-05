@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hurghada</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: url('a.avif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .hero {
+      background: url('resort.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;     
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: rgba(0, 0, 0, 0.3);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background-color: #1e90ff;
+      padding: 8px 16px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .center-content {
+      text-align: center;
+      color: white;
+      padding-bottom: 100px;
+      background: rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    .center-content h1 {
+      font-size: 44px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .center-content p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #e0e0e0;
+      line-height: 1.8;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      padding: 8px 15px;
+      background-color: #1e90ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #0c70d4;
+    }
+
+    /* ميديا كويري للموبايلات */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 10px 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .center-content h1 {
+        font-size: 30px;
+      }
+
+      .center-content p {
+        font-size: 16px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="https://i.ibb.co/kg7SNdyk/file-00000000fb4461f78c21a908cc1754dd.png" alt="شعار الموقع" width="70px" height="70px">
+  </div>
+  
+  <div class="hero">
+    <nav>
+      <div class="nav-links">
+        <a href="صفحة تسجيل الدخول.html" class="login-btn">تسجيل الدخول</a>
+        <a href="من نحن .html">من نحن</a>
+        <a href="الوجهات السياحية في الغردقة.html">الوجهات السياحية</a>
+        <a href="الصفحة الرئيسية.html">الصفحة الرئيسية</a>
+      </div>
+    </nav>
+
+    <div class="center-content">
+      <h1>مرحبًا بك في الغردقة جوهرة البحر الأحمر</h1>
+      <p>
+        اكتشف سحر الغردقة، المدينة الساحلية المصرية التي تجمع بين الطبيعة الخلابة، والمغامرات البحرية، والضيافة العربية الأصيلة.
+        من مياهها الفيروزية الصافية إلى شُعَبها المرجانية الملونة، تُعد الغردقة وجهة مثالية لعشّاق الغوص، والسباحة، والرحلات البحرية.
+      </p>
+      <div class="buttons">
+        <a href="نبذة تاريخية عن مدينة الغردقة.html">اعرف المزيد عن تاريخ الغردقة</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
