@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hurghada</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f2f8fc;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #1e90ff;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background-color: #1e90ff;
+      padding: 8px 16px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .hero {
+      background: url('resort.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1e90ff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 15px;
+      height: auto;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .sources {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+    }
+
+    .sources h3 {
+      color: #1e90ff;
+    }
+
+    .sources ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sources li {
+      margin-bottom: 10px;
+    }
+
+    .sources a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    .sources a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e90ff;
+      color: white;
+      margin-top: 40px;
+    }
+    
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        background-color: #1e90ff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+        padding: 15px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+        text-align: center;
+        color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>مرحبًا بكم في الغردقة</h1>
+  </header>
+
+  <nav>
+    <div class="logo">الغردقة</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="الصفحة الرئيسية.html">الصفحة الرئيسية</a>
+      <a href="الوجهات السياحية في الغردقة.html">الوجهات السياحية</a>
+      <a href="من نحن .html">من نحن</a>
+      <a href="صفحة تسجيل الدخول.html" class="login-btn">تسجيل الدخول</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <h2>نبذة تاريخية عن مدينة الغردقة</h2>
+    <div class="image-container">
+      <img src="https://th.bing.com/th/id/OIP.Ax6QCy6qIVdc-4AzjJxYdwHaEK?rs=1&pid=ImgDetMain" alt="صورة تاريخية لمدينة الغردقة">
+    </div>
+    <p>
+      تأسست مدينة الغردقة في عام 1905 كقرية صغيرة لصيد الأسماك...
+    </p>
+    <p>
+      في عهد الملك فاروق، تم بناء استراحة استجمامية في المدينة...
+    </p>
+    <p>
+      يعود اسم "الغردقة" إلى نبات يُعرف باسم "الغردق" أو "عنب الديب"...
+    </p>
+    <p>
+      بدأت الغردقة في الثمانينات بالتحول إلى وجهة سياحية عالمية...
+    </p>
+
+    <div class="sources">
+      <h3>مصادر موثوقة:</h3>
+      <ul>
+        <li><a href="https://ar.wikipedia.org/wiki/الغردقة" target="_blank">ويكيبيديا - الغردقة</a></li>
+        <li><a href="https://www.m-arabi.com/مدينة-الغردقة-مصر.html" target="_blank">المحيط العربي - مدينة الغردقة</a></li>
+        <li><a href="https://amazing-egypt.com/الغردقة/" target="_blank">Amazing Egypt - الغردقة</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
